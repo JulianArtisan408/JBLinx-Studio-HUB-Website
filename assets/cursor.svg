@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <circle cx="20" cy="20" r="18" stroke="#3A36E0" stroke-width="3" fill="none"/>
+  <circle cx="20" cy="20" r="5" fill="#3A36E0"/>
+  
+  <!-- Hover state animation -->
+  <circle cx="20" cy="20" r="12" stroke="#3A36E0" stroke-width="2" opacity="0.5" fill="none">
+    <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Click state animation -->
+  <circle cx="20" cy="20" r="10" stroke="#3A36E0" stroke-width="2" opacity="0" fill="none">
+    <animate attributeName="opacity" values="0;0.7;0" dur="0.5s" begin="click" repeatCount="1"/>
+    <animate attributeName="r" values="5;20;5" dur="0.5s" begin="click" repeatCount="1"/>
+  </circle>
+</svg>

@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBLinx Studio - Linking Dreams to Reality</title>
+    <meta name="description" content="JBLinx Studio is a cutting-edge tech company providing innovative digital solutions through product development, design services, web applications, and indie game development.">
+    <meta name="theme-color" content="#7038ff">
+    <meta name="keywords" content="software development, UX/UI design, web applications, indie games, technology solutions">
+    <meta name="author" content="JBLinx Studio">
+    <meta property="og:title" content="JBLinx Studio - Linking Dreams to Reality">
+    <meta property="og:description" content="Cutting-edge digital solutions through innovative technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jblinxstudio.com">
+    <meta property="og:image" content="https://jblinxstudio.com/assets/images/og-image.jpg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Preload key assets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="#7038ff" stroke-width="2" fill="none" class="animate-pulse-slow"></circle>
+                    <circle cx="50" cy="50" r="35" stroke="#4f8dff" stroke-width="2" fill="none" class="animate-pulse-slow-2"></circle>
+                    <path d="M30 40L50 30L70 40V60L50 70L30 60V40Z" fill="#7038ff" class="animate-glow"></path>
+                    <path d="M50 30V50L70 40" stroke="white" stroke-width="2"></path>
+                    <path d="M50 50V70L30 60" stroke="white" stroke-width="2"></path>
+                </svg>
+                <div class="loader-text">JBLinx Studio</div>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-message">Initializing Experience...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor (for desktop only) -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Mega Header -->
+    <header class="mega-header">
+        <div class="mega-header-inner">
+            <!-- Logo -->
+            <div class="mega-header-logo">
+                <a href="#hero" class="logo-link">
+                    <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="#7038ff" stroke-width="2" fill="none" class="animate-pulse-slow"></circle>
+                        <circle cx="50" cy="50" r="35" stroke="#4f8dff" stroke-width="2" fill="none" class="animate-pulse-slow-2"></circle>
+                        <path d="M30 40L50 30L70 40V60L50 70L30 60V40Z" fill="#7038ff" class="animate-glow"></path>
+                        <path d="M50 30V50L70 40" stroke="white" stroke-width="2"></path>
+                        <path d="M50 50V70L30 60" stroke="white" stroke-width="2"></path>
+                    </svg>
+                    <div class="logo-text">
+                        <div class="logo-title">
+                            JBLinx <span class="logo-highlight">Studio</span>
+                        </div>
+                        <div class="logo-slogan">Linking Dreams to Reality</div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="mega-nav">
+                <ul class="mega-nav-tabs">
+                    <li class="mega-nav-tab">
+                        <a href="#hero" class="mega-nav-link active">Home</a>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#solutions" class="mega-nav-link">Solutions <i class="fas fa-chevron-down mega-nav-caret"></i></a>
+                        <div class="mega-dropdown">
+                            <div class="mega-dropdown-header">
+                                <h3><i class="fas fa-rocket"></i> Our Solutions</h3>
+                                <p>Discover how we can transform your business</p>
+                            </div>
+                            <div class="mega-dropdown-content">
+                                <div class="mega-dropdown-column">
+                                    <h4>By Category</h4>
+                                    <ul class="mega-dropdown-list">
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-code"></i>
+                                                <div>
+                                                    <span>Software Development</span>
+                                                    <small>Custom solutions for businesses</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-paint-brush"></i>
+                                                <div>
+                                                    <span>UX/UI Design</span>
+                                                    <small>Beautiful, intuitive interfaces</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-mobile-alt"></i>
+                                                <div>
+                                                    <span>Mobile Apps</span>
+                                                    <small>iOS, Android & cross-platform</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <h4>By Industry</h4>
+                                    <ul class="mega-dropdown-list">
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-chart-line"></i>
+                                                <div>
+                                                    <span>Finance & Banking</span>
+                                                    <small>Secure & scalable systems</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <div>
+                                                    <span>E-commerce</span>
+                                                    <small>Complete online stores</small>
+                                                </div>
+                                                <span class="mega-dropdown-badge hot">Hot</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#solutions">
+                                                <i class="fas fa-graduation-cap"></i>
+                                                <div>
+                                                    <span>Education</span>
+                                                    <small>Learning platforms & tools</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <h4>Featured</h4>
+                                    <div class="mega-dropdown-featured">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Featured">
+                                        <h5>Enterprise Solutions</h5>
+                                        <p>Scale your business with custom enterprise-grade software</p>
+                                        <a href="#solutions" class="mega-dropdown-btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#products" class="mega-nav-link">Products</a>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#services" class="mega-nav-link">Services</a>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#games" class="mega-nav-link">Games</a>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#about" class="mega-nav-link">About</a>
+                    </li>
+                    <li class="mega-nav-tab">
+                        <a href="#contact" class="mega-nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Header Actions -->
+            <div class="mega-header-actions">
+                <button class="mega-action theme-toggle" aria-label="Toggle dark mode">
+                    <div class="mega-action-icon">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <div class="mega-action-tooltip">Toggle theme</div>
+                </button>
+                <button class="mega-action cart-toggle" aria-label="View cart">
+                    <div class="mega-action-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="mega-action-badge cart-count">0</span>
+                    </div>
+                    <div class="mega-action-tooltip">View cart</div>
+                </button>
+                <a href="#contact" class="mega-action-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Get in Touch
+                </a>
+                <button class="menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Progress Bar -->
+        <div class="mega-header-progress">
+            <div class="scroll-progress-bar"></div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu glass-morphism">
+        <div class="mobile-menu-header">
+            <a href="#hero" class="logo-link">
+                <svg class="logo-svg" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="#7038ff" stroke-width="2" fill="none"></circle>
+                    <circle cx="50" cy="50" r="35" stroke="#4f8dff" stroke-width="2" fill="none"></circle>
+                    <path d="M30 40L50 30L70 40V60L50 70L30 60V40Z" fill="#7038ff"></path>
+                    <path d="M50 30V50L70 40" stroke="white" stroke-width="2"></path>
+                    <path d="M50 50V70L30 60" stroke="white" stroke-width="2"></path>
+                </svg>
+                <div class="logo-text">
+                    <div class="logo-title">
+                        JBLinx <span class="logo-highlight">Studio</span>
+                    </div>
+                </div>
+            </a>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-sections">
+                <div>
+                    <h3 class="mobile-nav-title">Main</h3>
+                    <ul class="mobile-nav-list">
+                        <li><a href="#hero" class="mobile-nav-link" style="--i: 0;"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#solutions" class="mobile-nav-link" style="--i: 1;"><i class="fas fa-rocket"></i> Solutions</a></li>
+                        <li><a href="#products" class="mobile-nav-link" style="--i: 2;"><i class="fas fa-box"></i> Products</a></li>
+                        <li><a href="#services" class="mobile-nav-link" style="--i: 3;"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="#games" class="mobile-nav-link" style="--i: 4;"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="#about" class="mobile-nav-link" style="--i: 5;"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#contact" class="mobile-nav-link highlight" style="--i: 6;"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-social-links">
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar glass-morphism">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart cart-header-icon"></i> Your Cart</h3>
+            <button class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be populated by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+            <button class="btn btn-gradient checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <!-- Explorer Panel -->
+    <div class="explorer-panel glass-morphism">
+        <div class="explorer-header">
+            <h3><i class="fas fa-sitemap"></i> Site Explorer</h3>
+            <button class="explorer-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="explorer-content">
+            <div class="explorer-section">
+                <div class="explorer-section-header">
+                    <i class="fas fa-compass"></i> Navigation
+                </div>
+                <ul class="explorer-tree-list">
+                    <li class="explorer-tree-item">
+                        <div class="explorer-tree-folder">
+                            <button class="explorer-tree-toggle"><i class="fas fa-caret-right"></i></button>
+                            <i class="fas fa-folder folder-icon"></i>
+                            <span>Pages</span>
+                        </div>
+                        <ul class="explorer-tree-children">
+                            <li class="explorer-tree-item">
+                                <a href="#hero" class="explorer-tree-file active">
+                                    <i class="fas fa-home file-icon"></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#solutions" class="explorer-tree-file">
+                                    <i class="fas fa-rocket file-icon"></i>
+                                    <span>Solutions</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#products" class="explorer-tree-file">
+                                    <i class="fas fa-box file-icon"></i>
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#services" class="explorer-tree-file">
+                                    <i class="fas fa-cogs file-icon"></i>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#games" class="explorer-tree-file">
+                                    <i class="fas fa-gamepad file-icon"></i>
+                                    <span>Games</span>
+                                    <span class="explorer-badge hot">New</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#about" class="explorer-tree-file">
+                                    <i class="fas fa-info-circle file-icon"></i>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#contact" class="explorer-tree-file">
+                                    <i class="fas fa-paper-plane file-icon"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="explorer-tree-item">
+                        <div class="explorer-tree-folder">
+                            <button class="explorer-tree-toggle"><i class="fas fa-caret-right"></i></button>
+                            <i class="fas fa-folder folder-icon"></i>
+                            <span>Products</span>
+                        </div>
+                        <ul class="explorer-tree-children">
+                            <li class="explorer-tree-item">
+                                <a href="#products" data-product="connectx" class="explorer-tree-file">
+                                    <i class="fas fa-comments file-icon"></i>
+                                    <span>ConnectX</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#products" data-product="datalinx" class="explorer-tree-file">
+                                    <i class="fas fa-chart-pie file-icon"></i>
+                                    <span>DataLinx Analytics</span>
+                                </a>
+                            </li>
+                            <li class="explorer-tree-item">
+                                <a href="#products" data-product="securelinx" class="explorer-tree-file">
+                                    <i class="fas fa-shield-alt file-icon"></i>
+                                    <span>SecureLinx</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="explorer-footer">
+            <button class="explorer-theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span>Switch Theme</span>
+            </button>
+        </div>
+    </div>
+    <button class="explorer-toggle" aria-label="Toggle explorer panel">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Dot Navigation -->
+    <nav class="dot-navigation">
+        <a href="#hero" class="dot-nav-item active" data-tooltip="Home">
+            <i class="fas fa-home dot-nav-icon"></i>
+        </a>
+        <a href="#solutions" class="dot-nav-item" data-tooltip="Solutions">
+            <i class="fas fa-rocket dot-nav-icon"></i>
+        </a>
+        <a href="#products" class="dot-nav-item" data-tooltip="Products">
+            <i class="fas fa-box dot-nav-icon"></i>
+        </a>
+        <a href="#services" class="dot-nav-item" data-tooltip="Services">
+            <i class="fas fa-cogs dot-nav-icon"></i>
+        </a>
+        <a href="#games" class="dot-nav-item" data-tooltip="Games">
+            <i class="fas fa-gamepad dot-nav-icon"></i>
+        </a>
+        <a href="#about" class="dot-nav-item" data-tooltip="About">
+            <i class="fas fa-info-circle dot-nav-icon"></i>
+        </a>
+        <a href="#contact" class="dot-nav-item" data-tooltip="Contact">
+            <i class="fas fa-paper-plane dot-nav-icon"></i>
+        </a>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Innovative Digital Solutions</h1>
+                    <p class="hero-description">We build cutting-edge software that transforms businesses and delights users. From enterprise applications to indie games, we bring your ideas to life.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-gradient btn-glow">Get Started</a>
+                        <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="250">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Team Members</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="JBLinx Studio Digital Solutions">
+                    </div>
+                    <div class="floating-badges">
+                        <div class="floating-badge">
+                            <i class="fas fa-code"></i>
+                            <span>Advanced Technology</span>
+                        </div>
+                        <div class="floating-badge">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Stunning Design</span>
+                        </div>
+                        <div class="floating-badge">
+                            <i class="fas fa-rocket"></i>
+                            <span>Fast Performance</span>
+                        </div>
+                        <div class="floating-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure & Reliable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-jump">
+                <a href="#solutions"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+        
+        <!-- Solutions Section -->
+        <section id="solutions" class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">Our Solutions</span>
+                    <h2 class="section-title">How We <span class="text-gradient">Solve Problems</span></h2>
+                    <p class="section-description">We provide comprehensive solutions tailored to your business needs, whether you're a startup looking to disrupt or an enterprise seeking digital transformation.</p>
+                </header>
+                
+                <div class="solutions-tabs">
+                    <div class="tab-controls">
+                        <button class="tab-control active" data-tab="business">
+                            <i class="fas fa-building"></i> Business
+                        </button>
+                        <button class="tab-control" data-tab="technology">
+                            <i class="fas fa-microchip"></i> Technology
+                        </button>
+                        <button class="tab-control" data-tab="design">
+                            <i class="fas fa-paint-brush"></i> Design
+                        </button>
+                    </div>
+                    
+                    <div class="tab-contents">
+                        <div id="solutions-business" class="tab-content active">
+                            <div class="solution-content">
+                                <div class="solution-image">
+                                    <img src="https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Business Solutions">
+                                </div>
+                                <div class="solution-details">
+                                    <h3>Business Solutions</h3>
+                                    <p>We help businesses of all sizes streamline operations, increase efficiency, and drive growth through custom software solutions, data analytics, and digital transformation strategies.</p>
+                                    <ul class="solution-features">
+                                        <li><i class="fas fa-check-circle"></i> Custom ERP & CRM Systems</li>
+                                        <li><i class="fas fa-check-circle"></i> Business Process Automation</li>
+                                        <li><i class="fas fa-check-circle"></i> Data Analytics & Business Intelligence</li>
+                                        <li><i class="fas fa-check-circle"></i> E-commerce & Online Marketplace Solutions</li>
+                                        <li><i class="fas fa-check-circle"></i> Digital Transformation Consulting</li>
+                                    </ul>
+                                    <a href="#contact" class="btn btn-gradient">Get a Business Solution</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="solutions-technology" class="tab-content">
+                            <div class="solution-content">
+                                <div class="solution-image">
+                                    <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Technology Solutions">
+                                </div>
+                                <div class="solution-details">
+                                    <h3>Technology Solutions</h3>
+                                    <p>Our expert team leverages cutting-edge technologies to build robust, scalable, and secure applications that solve complex problems and deliver exceptional user experiences.</p>
+                                    <ul class="solution-features">
+                                        <li><i class="fas fa-check-circle"></i> Web & Mobile Application Development</li>
+                                        <li><i class="fas fa-check-circle"></i> Cloud Solutions & DevOps</li>
+                                        <li><i class="fas fa-check-circle"></i> AI & Machine Learning Integration</li>
+                                        <li><i class="fas fa-check-circle"></i> Blockchain Development</li>
+                                        <li><i class="fas fa-check-circle"></i> IoT & Embedded Systems</li>
+                                    </ul>
+                                    <a href="#contact" class="btn btn-gradient">Explore Technology</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="solutions-design" class="tab-content">
+                            <div class="solution-content">
+                                <div class="solution-image">
+                                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Design Solutions">
+                                </div>
+                                <div class="solution-details">
+                                    <h3>Design Solutions</h3>
+                                    <p>We create beautiful, intuitive, and user-centric designs that enhance user engagement, build brand identity, and drive conversion across all digital touchpoints.</p>
+                                    <ul class="solution-features">
+                                        <li><i class="fas fa-check-circle"></i> UX/UI Design & Prototyping</li>
+                                        <li><i class="fas fa-check-circle"></i> Brand Identity & Design Systems</li>
+                                        <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
+                                        <li><i class="fas fa-check-circle"></i> Mobile App Design</li>
+                                        <li><i class="fas fa-check-circle"></i> Illustration & Motion Graphics</li>
+                                    </ul>
+                                    <a href="#contact" class="btn btn-gradient">Request Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Section -->
+        <section id="products" class="products-section section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">Our Products</span>
+                    <h2 class="section-title">Innovative <span class="text-gradient">Solutions</span></h2>
+                    <p class="section-description">Discover our flagship products designed to transform how businesses operate, communicate, and secure their digital assets.</p>
+                </header>
+                
+                <div class="products-grid">
+                    <div class="product-card panel-tilt" data-product="connectx">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="ConnectX">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">ConnectX</h3>
+                            <p class="product-price">$299</p>
+                            <p class="product-description">A comprehensive communication platform that streamlines team collaboration with real-time messaging, file sharing, and video conferencing.</p>
+                            <div class="product-actions">
+                                <button class="btn btn-gradient add-to-cart-btn" data-product="connectx" data-price="299">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline product-details-btn">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card panel-tilt" data-product="datalinx">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="DataLinx Analytics">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">DataLinx Analytics</h3>
+                            <p class="product-price">$399</p>
+                            <p class="product-description">Powerful data visualization and analytics tool for business intelligence with interactive dashboards and predictive analytics.</p>
+                            <div class="product-actions">
+                                <button class="btn btn-gradient add-to-cart-btn" data-product="datalinx" data-price="399">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline product-details-btn">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card panel-tilt" data-product="securelinx">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="SecureLinx">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">SecureLinx</h3>
+                            <p class="product-price">$349</p>
+                            <p class="product-description">Advanced security solution for protecting digital assets and data with encryption, threat detection, and automated backups.</p>
+                            <div class="product-actions">
+                                <button class="btn btn-gradient add-to-cart-btn" data-product="securelinx" data-price="349">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline product-details-btn">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">Our Services</span>
+                    <h2 class="section-title">Expert <span class="text-gradient">Services</span></h2>
+                    <p class="section-description">We offer a full range of digital services to help your business grow, innovate, and stay ahead of the competition.</p>
+                </header>
+                
+                <div class="services-grid">
+                    <div class="service-card panel-tilt">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Custom Development</h3>
+                        <p class="service-description">Bespoke software solutions tailored to your specific business requirements and objectives.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Web Applications</li>
+                            <li><i class="fas fa-check"></i> Mobile Apps (iOS & Android)</li>
+                            <li><i class="fas fa-check"></i> Enterprise Solutions</li>
+                            <li><i class="fas fa-check"></i> API Development</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                    </div>
+                    
+                    <div class="service-card panel-tilt">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-title">UX/UI Design</h3>
+                        <p class="service-description">User-centered design services that create intuitive, engaging, and beautiful digital experiences.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> User Research</li>
+                            <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                            <li><i class="fas fa-check"></i> Visual Design</li>
+                            <li><i class="fas fa-check"></i> Usability Testing</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                    </div>
+                    
+                    <div class="service-card panel-tilt">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Solutions</h3>
+                        <p class="service-description">Scalable, reliable, and secure cloud infrastructure and services for modern businesses.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cloud Migration</li>
+                            <li><i class="fas fa-check"></i> DevOps & CI/CD</li>
+                            <li><i class="fas fa-check"></i> Serverless Architecture</li>
+                            <li><i class="fas fa-check"></i> Cloud Security</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                    </div>
+                    
+                    <div class="service-card panel-tilt">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">AI & ML Solutions</h3>
+                        <p class="service-description">Harness the power of artificial intelligence and machine learning to gain insights and automate processes.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Data Analysis</li>
+                            <li><i class="fas fa-check"></i> Predictive Models</li>
+                            <li><i class="fas fa-check"></i> Natural Language Processing</li>
+                            <li><i class="fas fa-check"></i> Computer Vision</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!-- Portfolio Showcase Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="portfolio-container">
+            <header class="portfolio-header">
+                <span class="overline">Our Work</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p>Explore our diverse portfolio of work across multiple industries. Each project represents our commitment to excellence, innovation, and client success.</p>
+                <div class="portfolio-filters">
+                    <button class="portfolio-filter active" data-filter="all">All Projects</button>
+                    <button class="portfolio-filter" data-filter="web">Web Development</button>
+                    <button class="portfolio-filter" data-filter="mobile">Mobile Apps</button>
+                    <button class="portfolio-filter" data-filter="design">UI/UX Design</button>
+                    <button class="portfolio-filter" data-filter="branding">Branding</button>
+                    <button class="portfolio-filter" data-filter="ecommerce">E-Commerce</button>
+                </div>
+            </header>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="web ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="E-Commerce Platform">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">E-Commerce / Web Development</div>
+                        <h3 class="portfolio-title">Luxury Retail Platform</h3>
+                        <p class="portfolio-description">A high-end e-commerce solution with real-time inventory, AI-driven recommendations, and seamless checkout experience.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-badge featured">Featured</div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="mobile design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Finance App">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Mobile App / UI Design</div>
+                        <h3 class="portfolio-title">Personal Finance App</h3>
+                        <p class="portfolio-description">A minimalist, intuitive finance tracking app with budgeting tools, expense analysis, and investment insights.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-badge new">New</div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-category="web design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Corporate Website">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Web Development / UI Design</div>
+                        <h3 class="portfolio-title">Corporate Identity Portal</h3>
+                        <p class="portfolio-description">A sophisticated corporate website with custom CMS, interactive elements, and comprehensive analytics integration.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-category="design branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Brand Identity">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Branding / Design</div>
+                        <h3 class="portfolio-title">Spectrum Brand Identity</h3>
+                        <p class="portfolio-description">Comprehensive brand identity system including logo design, typography, color palette, and brand guidelines.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-category="mobile ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Mobile Shopping App">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Mobile App / E-Commerce</div>
+                        <h3 class="portfolio-title">ShopEase Mobile Experience</h3>
+                        <p class="portfolio-description">A streamlined mobile shopping experience with AR product visualization, voice search, and one-tap checkout.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-category="web design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="Educational Platform">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Web Development / UI Design</div>
+                        <h3 class="portfolio-title">Interactive Learning Platform</h3>
+                        <p class="portfolio-description">An engaging educational platform with interactive lessons, progress tracking, and personalized learning paths.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-load-more">
+                <button id="loadMorePortfolio" class="btn btn-gradient load-more-btn">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Games Section -->
+        <section id="games" class="games-section section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">Indie Games</span>
+                    <h2 class="section-title">Our <span class="text-gradient">Game Studio</span></h2>
+                    <p class="section-description">Beyond business applications, we craft immersive gaming experiences that push the boundaries of creativity and technology.</p>
+                </header>
+                
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Cyber Quest">
+                            <div class="game-overlay">
+                                <a href="#" class="btn btn-gradient">Coming Soon</a>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title">Cyber Quest</h3>
+                            <p class="game-genre">Action RPG</p>
+                            <p class="game-description">An immersive cyberpunk RPG set in a dystopian future where technology has transformed society. Navigate through a complex narrative with multiple endings.</p>
+                            <div class="game-platforms">
+                                <span><i class="fab fa-windows"></i></span>
+                                <span><i class="fab fa-apple"></i></span>
+                                <span><i class="fab fa-playstation"></i></span>
+                                <span><i class="fab fa-xbox"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Stellar Odyssey">
+                            <div class="game-overlay">
+                                <a href="#" class="btn btn-gradient">Coming Soon</a>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title">Stellar Odyssey</h3>
+                            <p class="game-genre">Space Exploration</p>
+                            <p class="game-description">Explore the vast universe in this open-world space adventure. Discover new planets, engage with alien civilizations, and uncover cosmic mysteries.</p>
+                            <div class="game-platforms">
+                                <span><i class="fab fa-windows"></i></span>
+                                <span><i class="fab fa-apple"></i></span>
+                                <span><i class="fab fa-playstation"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">About Us</span>
+                    <h2 class="section-title">Our <span class="text-gradient">Story</span></h2>
+                    <p class="section-description">Learn about our journey, mission, and the values that drive everything we do at JBLinx Studio.</p>
+                </header>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>JBLinx Studio was founded with a simple yet ambitious vision: to build exceptional digital experiences that connect dreams to reality. What started as a small team of passionate developers and designers has grown into a full-service digital studio working with clients across the globe.</p>
+                        
+                        <p>We believe that technology should solve real problems, empower users, and create meaningful experiences. This philosophy guides every project we undertake, from enterprise applications to indie games.</p>
+                        
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="10">0</div>
+                                <div class="about-stat-label">Years of Experience</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="120">0</div>
+                                <div class="about-stat-label">Clients Worldwide</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="15">0</div>
+                                <div class="about-stat-label">Industry Awards</div>
+                            </div>
+                        </div>
+                        
+                        <p>Our team is comprised of talented individuals from diverse backgrounds, united by a passion for technology and innovation. We're continuously learning, experimenting, and pushing the boundaries of what's possible in the digital realm.</p>
+                        
+                        <div class="about-values">
+                            <h3>Our Core Values</h3>
+                            <div class="values-grid">
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4>Innovation</h4>
+                                    <p>We embrace new ideas and technologies to solve complex problems.</p>
+                                </div>
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4>Excellence</h4>
+                                    <p>We strive for excellence in everything we do and deliver.</p>
+                                </div>
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h4>Collaboration</h4>
+                                    <p>We believe great things are built through teamwork and partnership.</p>
+                                </div>
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h4>Passion</h4>
+                                    <p>We are passionate about technology and its potential to improve lives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="JBLinx Studio Team">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="overline">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="text-gradient">Us</span></h2>
+                    <p class="section-description">Have a question, project idea, or want to work with us? We'd love to hear from you. Reach out and let's start a conversation.</p>
+                </header>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>123 Innovation Drive<br>Tech Valley, CA 94043</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@jblinxstudio.com">info@jblinxstudio.com</a></p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Working Hours</h3>
+                            <p>Monday-Friday: 9am - 6pm<br>Weekend: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container glass-panel">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Enhanced Professional Footer -->
+    <footer class="footer-enhanced">
+        <!-- Top Footer Section -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Information -->
+                    <div class="footer-brand-section">
+                        <div class="footer-logo">
+                            <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" stroke="#7038ff" stroke-width="2" fill="none"></circle>
+                                <circle cx="50" cy="50" r="35" stroke="#4f8dff" stroke-width="2" fill="none"></circle>
+                                <path d="M30 40L50 30L70 40V60L50 70L30 60V40Z" fill="#7038ff"></path>
+                                <path d="M50 30V50L70 40" stroke="white" stroke-width="2"></path>
+                                <path d="M50 50V70L30 60" stroke="white" stroke-width="2"></path>
+                            </svg>
+                            <div class="footer-logo-text">
+                                <div class="footer-logo-title">
+                                    JBLinx <span class="logo-highlight">Studio</span>
+                                </div>
+                                <div class="footer-logo-slogan">Linking Dreams to Reality</div>
+                            </div>
+                        </div>
+                        <p class="footer-description">Creating cutting-edge digital experiences that transform businesses and delight users. Our innovative solutions span across enterprise applications, design services, cloud solutions, and indie game development.</p>
+                        <div class="footer-headquarters">
+                            <h4>Headquarters</h4>
+                            <address>
+                                123 Innovation Drive<br>
+                                Tech Valley, CA 94043<br>
+                                United States
+                            </address>
+                        </div>
+                        <div class="footer-certification">
+                            <div class="footer-cert-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>ISO 27001 Certified</span>
+                            </div>
+                            <div class="footer-cert-item">
+                                <i class="fas fa-award"></i>
+                                <span>Award-Winning Agency</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-links-section">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <div class="footer-nav-grid">
+                            <div class="footer-nav-column">
+                                <h4>Company</h4>
+                                <ul class="footer-nav-list">
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#team">Our Team</a></li>
+                                    <li><a href="#careers">Careers</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#press">Press Releases</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-column">
+                                <h4>Services</h4>
+                                <ul class="footer-nav-list">
+                                    <li><a href="#services">Custom Development</a></li>
+                                    <li><a href="#services">UX/UI Design</a></li>
+                                    <li><a href="#services">Cloud Solutions</a></li>
+                                    <li><a href="#services">AI & ML Solutions</a></li>
+                                    <li><a href="#services">Consulting Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-column">
+                                <h4>Products</h4>
+                                <ul class="footer-nav-list">
+                                    <li><a href="#products" data-product="connectx">ConnectX</a></li>
+                                    <li><a href="#products" data-product="datalinx">DataLinx Analytics</a></li>
+                                    <li><a href="#products" data-product="securelinx">SecureLinx</a></li>
+                                    <li><a href="#games">Indie Games</a></li>
+                                    <li><a href="#products">Enterprise Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-column">
+                                <h4>Resources</h4>
+                                <ul class="footer-nav-list">
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#case-studies">Case Studies</a></li>
+                                    <li><a href="#documentation">Documentation</a></li>
+                                    <li><a href="#webinars">Webinars</a></li>
+                                    <li><a href="#support">Support Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter & Connect -->
+                    <div class="footer-connect-section">
+                        <div class="footer-newsletter">
+                            <h3 class="footer-title">Stay Updated</h3>
+                            <p>Subscribe to our newsletter for the latest news and insights.</p>
+                            <form class="footer-subscribe-form">
+                                <div class="footer-form-group">
+                                    <input type="email" placeholder="Your email address" required>
+                                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                                </div>
+                                <div class="footer-form-consent">
+                                    <label>
+                                        <input type="checkbox" required>
+                                        <span>I agree to receive marketing communications from JBLinx Studio</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer-social-connect">
+                            <h3 class="footer-title">Connect With Us</h3>
+                            <div class="footer-social-icons">
+                                <a href="#" aria-label="Twitter" class="footer-social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" aria-label="Facebook" class="footer-social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" aria-label="Instagram" class="footer-social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" aria-label="LinkedIn" class="footer-social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" aria-label="GitHub" class="footer-social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" aria-label="YouTube" class="footer-social-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="footer-app-badges">
+                                <h4>Download Our Apps</h4>
+                                <div class="footer-app-links">
+                                    <a href="#" class="footer-app-badge">
+                                        <i class="fab fa-apple"></i>
+                                        <span>App Store</span>
+                                    </a>
+                                    <a href="#" class="footer-app-badge">
+                                        <i class="fab fa-google-play"></i>
+                                        <span>Google Play</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Middle Footer - Awards and Partners -->
+        <div class="footer-awards">
+            <div class="container">
+                <div class="footer-awards-wrapper">
+                    <div class="footer-awards-title">
+                        <h3>Awards & Recognition</h3>
+                    </div>
+                    <div class="footer-awards-logos">
+                        <div class="footer-award">
+                            <img src="https://via.placeholder.com/80x40?text=Award" alt="Best Tech Startup Award">
+                            <span>Best Tech Startup</span>
+                        </div>
+                        <div class="footer-award">
+                            <img src="https://via.placeholder.com/80x40?text=Award" alt="Innovation Excellence Award">
+                            <span>Innovation Excellence</span>
+                        </div>
+                        <div class="footer-award">
+                            <img src="https://via.placeholder.com/80x40?text=Award" alt="Top UX Design Award">
+                            <span>Top UX Design</span>
+                        </div>
+                        <div class="footer-award">
+                            <img src="https://via.placeholder.com/80x40?text=Award" alt="Technology Leader Award">
+                            <span>Technology Leader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Footer - Copyright, Legal, etc -->
+        <div class="footer-bottom-enhanced">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 JBLinx Studio. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#cookies">Cookie Policy</a>
+                        <a href="#accessibility">Accessibility</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </div>
+                    <div class="footer-language-selector">
+                        <select>
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="footer-disclaimer">
+                    <p>JBLinx Studio is committed to sustainability and ethical business practices. Our digital solutions are designed with environmental impact in mind, emphasizing energy efficiency and responsible resource management.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modals -->
+    <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Product Details</h2>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be dynamically populated by JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-close-btn">Close</button>
+                <button class="btn btn-gradient add-to-cart-modal-btn">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Form Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Message Sent</h2>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Your message has been sent successfully! We'll get back to you as soon as possible.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-gradient modal-close-btn">Ok</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cookies Consent Banner -->
+    <div id="cookiesConsent" class="cookies-consent">
+        <div class="cookies-content">
+            <div class="cookies-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookies-text">
+                <h3>We Value Your Privacy</h3>
+                <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+            </div>
+            <div class="cookies-buttons">
+                <button class="btn-cookie btn-cookie-settings">Cookie Settings</button>
+                <button class="btn-cookie btn-cookie-accept">Accept All</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-icon">
+            <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="toast-content">
+            <p class="toast-message"></p>
+        </div>
+        <button class="toast-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JBLinx Studio",
+        "url": "https://jblinxstudio.com",
+        "logo": "https://jblinxstudio.com/logo.svg",
+        "slogan": "Linking Dreams to Reality",
+        "description": "JBLinx Studio is a cutting-edge tech company providing innovative digital solutions through product development, design services, web applications, and indie game development.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Innovation Drive",
+            "addressLocality": "Tech Valley",
+            "addressRegion": "CA",
+            "postalCode": "94043",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "info@jblinxstudio.com"
+        },
+        "sameAs": [
+            "https://twitter.com/jblinxstudio",
+            "https://facebook.com/jblinxstudio",
+            "https://instagram.com/jblinxstudio",
+            "https://linkedin.com/company/jblinxstudio",
+            "https://github.com/jblinxstudio"
+        ]
+    }
+    </script>
+    
+    <!-- Main Script -->
+    <script src="main.js"></script>
+</body>
+</html>

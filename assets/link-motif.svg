@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" class="animated-svg">
+  <!-- Background Grid Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path class="path-fill" d="M39 0H40V40H39V0Z" fill="#3A36E0" opacity="0.05"/>
+    <path class="path-fill" d="M0 39H40V40H0V39Z" fill="#3A36E0" opacity="0.05"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Central Node -->
+  <circle class="path-draw path-fill" cx="400" cy="300" r="40" stroke="#3A36E0" stroke-width="3" fill="#3A36E0" opacity="0.2"/>
+  
+  <!-- Connected Nodes -->
+  <circle class="path-draw path-fill" cx="200" cy="150" r="30" stroke="#3A36E0" stroke-width="3" fill="#3A36E0" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="600" cy="150" r="30" stroke="#6E42CA" stroke-width="3" fill="#6E42CA" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="150" cy="400" r="25" stroke="#6E42CA" stroke-width="3" fill="#6E42CA" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="650" cy="400" r="25" stroke="#3A36E0" stroke-width="3" fill="#3A36E0" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="400" cy="500" r="30" stroke="#FF7B5C" stroke-width="3" fill="#FF7B5C" opacity="0.1"/>
+  
+  <!-- Secondary Nodes -->
+  <circle class="path-draw path-fill" cx="300" cy="200" r="15" stroke="#6E42CA" stroke-width="2" fill="#6E42CA" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="500" cy="200" r="15" stroke="#3A36E0" stroke-width="2" fill="#3A36E0" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="250" cy="350" r="15" stroke="#FF7B5C" stroke-width="2" fill="#FF7B5C" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="550" cy="350" r="15" stroke="#FF7B5C" stroke-width="2" fill="#FF7B5C" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="350" cy="430" r="15" stroke="#3A36E0" stroke-width="2" fill="#3A36E0" opacity="0.1"/>
+  <circle class="path-draw path-fill" cx="450" cy="430" r="15" stroke="#6E42CA" stroke-width="2" fill="#6E42CA" opacity="0.1"/>
+  
+  <!-- Connection Lines - Primary -->
+  <line class="path-draw" x1="400" y1="300" x2="200" y2="150" stroke="#3A36E0" stroke-width="3" stroke-dasharray="10 5"/>
+  <line class="path-draw" x1="400" y1="300" x2="600" y2="150" stroke="#6E42CA" stroke-width="3" stroke-dasharray="10 5"/>
+  <line class="path-draw" x1="400" y1="300" x2="150" y2="400" stroke="#6E42CA" stroke-width="3" stroke-dasharray="10 5"/>
+  <line class="path-draw" x1="400" y1="300" x2="650" y2="400" stroke="#3A36E0" stroke-width="3" stroke-dasharray="10 5"/>
+  <line class="path-draw" x1="400" y1="300" x2="400" y2="500" stroke="#FF7B5C" stroke-width="3" stroke-dasharray="10 5"/>
+  
+  <!-- Connection Lines - Secondary -->
+  <line class="path-draw" x1="200" y1="150" x2="300" y2="200" stroke="#6E42CA" stroke-width="2" stroke-dasharray="5 3"/>
+  <line class="path-draw" x1="600" y1="150" x2="500" y2="200" stroke="#3A36E0" stroke-width="2" stroke-dasharray="5 3"/>
+  <line class="path-draw" x1="150" y1="400" x2="250" y2="350" stroke="#FF7B5C" stroke-width="2" stroke-dasharray="5 3"/>
+  <line class="path-draw" x1="650" y1="400" x2="550" y2="350" stroke="#FF7B5C" stroke-width="2" stroke-dasharray="5 3"/>
+  <line class="path-draw" x1="400" y1="500" x2="350" y2="430" stroke="#3A36E0" stroke-width="2" stroke-dasharray="5 3"/>
+  <line class="path-draw" x1="400" y1="500" x2="450" y2="430" stroke="#6E42CA" stroke-width="2" stroke-dasharray="5 3"/>
+  
+  <!-- Data Transfer Animations (Dots moving along lines) -->
+  <circle class="path-fill" cx="0" cy="0" r="5" fill="#3A36E0">
+    <animateMotion path="M400,300 L200,150" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle class="path-fill" cx="0" cy="0" r="5" fill="#6E42CA">
+    <animateMotion path="M400,300 L600,150" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle class="path-fill" cx="0" cy="0" r="5" fill="#6E42CA">
+    <animateMotion path="M400,300 L150,400" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle class="path-fill" cx="0" cy="0" r="5" fill="#3A36E0">
+    <animateMotion path="M400,300 L650,400" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle class="path-fill" cx="0" cy="0" r="5" fill="#FF7B5C">
+    <animateMotion path="M400,300 L400,500" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Pulse Animations for Nodes -->
+  <circle cx="400" cy="300" r="40" fill="none" stroke="#3A36E0">
+    <animate attributeName="r" values="40;60;40" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="200" cy="150" r="30" fill="none" stroke="#3A36E0">
+    <animate attributeName="r" values="30;45;30" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="600" cy="150" r="30" fill="none" stroke="#6E42CA">
+    <animate attributeName="r" values="30;45;30" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="150" cy="400" r="25" fill="none" stroke="#6E42CA">
+    <animate attributeName="r" values="25;40;25" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="650" cy="400" r="25" fill="none" stroke="#3A36E0">
+    <animate attributeName="r" values="25;40;25" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="400" cy="500" r="30" fill="none" stroke="#FF7B5C">
+    <animate attributeName="r" values="30;45;30" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

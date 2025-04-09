@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" fill="none" class="animated-svg">
+  <!-- Background elements -->
+  <path class="path-fill" d="M23 5C13.1 5 5 13.1 5 23C5 32.9 13.1 41 23 41H39C48.9 41 57 32.9 57 23C57 13.1 48.9 5 39 5H23Z" fill="#3A36E0" opacity="0.2"/>
+  <path class="path-fill" d="M110 19C100.1 19 92 27.1 92 37C92 46.9 100.1 55 110 55H126C135.9 55 144 46.9 144 37C144 27.1 135.9 19 126 19H110Z" fill="#6E42CA" opacity="0.2"/>
+  
+  <!-- J Letter with Link -->
+  <path class="path-draw" d="M23 12H39C45.1 12 50 16.9 50 23V23C50 29.1 45.1 34 39 34H23C16.9 34 12 29.1 12 23V23C12 16.9 16.9 12 23 12Z" stroke="#3A36E0" stroke-width="3" fill="none"/>
+  <path class="path-draw" d="M31 16V26C31 28.2 29.2 30 27 30V30" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- B Letter with Link -->
+  <path class="path-draw" d="M110 26H126C132.1 26 137 30.9 137 37V37C137 43.1 132.1 48 126 48H110C103.9 48 99 43.1 99 37V37C99 30.9 103.9 26 110 26Z" stroke="#6E42CA" stroke-width="3" fill="none"/>
+  <path class="path-draw" d="M112 26V48" stroke="#6E42CA" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M112 37H126C128.2 37 130 35.2 130 33V33C130 30.8 128.2 29 126 29H112" stroke="#6E42CA" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M112 45H126C128.2 45 130 43.2 130 41V41C130 38.8 128.2 37 126 37H112" stroke="#6E42CA" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Link connecting J and B -->
+  <path class="path-draw" d="M50 23H99" stroke="#FF7B5C" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 5" fill="none"/>
+  
+  <!-- Text: LINX -->
+  <path class="path-draw" d="M150 37H157" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M150 26V48" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <path class="path-draw" d="M163 26V48" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M173 26V48" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M163 37H173" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <path class="path-draw" d="M181 26L189 48" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M197 26L189 48" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path class="path-draw" d="M184 40H194" stroke="#3A36E0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Text: STUDIO -->
+  <path class="path-fill" d="M149 55.5C148.724 55.5 148.5 55.276 148.5 55V53C148.5 52.724 148.724 52.5 149 52.5C149.276 52.5 149.5 52.724 149.5 53V55C149.5 55.276 149.276 55.5 149 55.5Z" fill="#3A36E0"/>
+  <path class="path-fill" d="M153 55.5C152.724 55.5 152.5 55.276 152.5 55V53C152.5 52.724 152.724 52.5 153 52.5C153.276 52.5 153.5 52.724 153.5 53V55C153.5 55.276 153.276 55.5 153 55.5Z" fill="#3A36E0"/>
+  <path class="path-fill" d="M157 55.5C156.724 55.5 156.5 55.276 156.5 55V53C156.5 52.724 156.724 52.5 157 52.5C157.276 52.5 157.5 52.724 157.5 53V55C157.5 55.276 157.276 55.5 157 55.5Z" fill="#3A36E0"/>
+  <path class="path-fill" d="M161 55.5C160.724 55.5 160.5 55.276 160.5 55V53C160.5 52.724 160.724 52.5 161 52.5C161.276 52.5 161.5 52.724 161.5 53V55C161.5 55.276 161.276 55.5 161 55.5Z" fill="#3A36E0"/>
+  <path class="path-fill" d="M165 55.5C164.724 55.5 164.5 55.276 164.5 55V53C164.5 52.724 164.724 52.5 165 52.5C165.276 52.5 165.5 52.724 165.5 53V55C165.5 55.276 165.276 55.5 165 55.5Z" fill="#3A36E0"/>
+  <path class="path-fill" d="M169 55.5C168.724 55.5 168.5 55.276 168.5 55V53C168.5 52.724 168.724 52.5 169 52.5C169.276 52.5 169.5 52.724 169.5 53V55C169.5 55.276 169.276 55.5 169 55.5Z" fill="#3A36E0"/>
+</svg>
